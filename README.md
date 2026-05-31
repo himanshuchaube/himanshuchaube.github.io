@@ -1,4 +1,3 @@
-# himanshuchaube.github.io
 # Himanshu Chaube
 
 Geophysicist | GNSS | InSAR | Seismology
