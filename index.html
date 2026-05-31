@@ -3,120 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Himanshu Chaube | Geophysicist</title>
+<title>Himanshu Chaube</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
 body{
-background:#f4f6f9;
-color:#222;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#002b5c,#004a99);
-color:white;
-text-align:center;
-padding:70px 20px;
+    background:linear-gradient(135deg,#003366,#0056b3);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
 }
 
-header h1{
-font-size:3rem;
-font-weight:bold;
+.profile-photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    margin-bottom:20px;
 }
 
-header p{
-font-size:1.2rem;
-margin-top:15px;
+h1{
+    margin:10px 0;
+    font-size:42px;
 }
 
 .tagline{
-margin-top:10px;
-font-size:1rem;
-color:#d9e8ff;
+    font-size:22px;
+    margin:10px 0;
 }
 
 .founder{
-margin-top:15px;
-font-size:1.1rem;
-font-weight:bold;
-color:#ffd54f;
+    color:#ffd54f;
+    font-weight:bold;
 }
 
 .buttons{
-margin-top:25px;
+    margin-top:20px;
 }
 
 .buttons a{
-display:inline-block;
-margin:8px;
-padding:12px 22px;
-background:white;
-color:#003366;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-.buttons a:hover{
-background:#dbe9ff;
+    display:inline-block;
+    background:white;
+    color:#003366;
+    text-decoration:none;
+    padding:12px 22px;
+    margin:8px;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 nav{
-background:#003366;
-padding:15px;
-text-align:center;
+    background:#00264d;
+    text-align:center;
+    padding:15px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:10px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
 }
 
 section{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-margin-bottom:25px;
+    max-width:1000px;
+    margin:25px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h2{
-color:#003366;
-margin-bottom:15px;
+    color:#003366;
 }
 
-.skills span{
-display:inline-block;
-background:#e8f0ff;
-padding:10px 15px;
-margin:5px;
-border-radius:20px;
+.tag{
+    display:inline-block;
+    background:#e8eef8;
+    padding:8px 14px;
+    margin:5px;
+    border-radius:20px;
 }
 
 footer{
-background:#003366;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
 }
-
 </style>
 </head>
 
@@ -124,58 +108,53 @@ margin-top:40px;
 
 <header>
 
+<img src="profile.jpeg" alt="Himanshu Chaube" class="profile-photo">
+
 <h1>HIMANSHU CHAUBE</h1>
 
-<p>
+<p class="tagline">
 Geophysicist | Researcher | Educator | Traveller | Blogger
 </p>
 
-<div class="founder">
+<p class="founder">
 Founder - Geophysics Adda
-</div>
+</p>
 
 <div class="buttons">
 <a href="#">Download CV</a>
-<a href="#">ResearchGate</a>
+<a href="https://www.researchgate.net/">ResearchGate</a>
 <a href="https://t.me/GeophysicsAdda">Telegram</a>
 </div>
 
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Research</a>
-<a href="#">Publications</a>
-<a href="#">Tutorials</a>
-<a href="#">Travel Blog</a>
-<a href="#">Poetry</a>
-<a href="#">Geophysics Adda</a>
-<a href="#">Contact</a>
+<a href="#about">Home</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#tutorials">Tutorials</a>
+<a href="#travel">Travel Blog</a>
+<a href="#poetry">Poetry</a>
+<a href="#adda">Geophysics Adda</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section>
-
-<div class="card">
+<section id="about">
 <h2>About Me</h2>
 
 <p>
-I am a geophysicist working in the fields of GNSS,
-InSAR, Seismology, Crustal Deformation and
-Reservoir Triggered Seismicity.
+I am a Research Fellow working in the fields of GNSS, InSAR,
+Seismology, Crustal Deformation and Reservoir Triggered Seismicity.
 </p>
-
-<br>
 
 <p>
 My research focuses on understanding active tectonics,
-strain accumulation and deformation processes using
-modern geodetic and seismological techniques.
+strain accumulation and deformation processes using modern
+geodetic and seismological techniques.
 </p>
+</section>
 
-</div>
-
-<div class="card">
-
+<section>
 <h2>Current Position</h2>
 
 <p>
@@ -183,38 +162,32 @@ Research Fellow<br>
 Borehole Geophysics Research Laboratory (BGRL)<br>
 Ministry of Earth Sciences, India
 </p>
+</section>
 
-</div>
-
-<div class="card">
-
+<section id="research">
 <h2>Research Areas</h2>
 
-<div class="skills">
-<span>GNSS</span>
-<span>InSAR</span>
-<span>Seismology</span>
-<span>Crustal Deformation</span>
-<span>Strain Rate</span>
-<span>RTS Studies</span>
-<span>GRACE</span>
-<span>Geospatial Analysis</span>
-</div>
+<span class="tag">GNSS</span>
+<span class="tag">InSAR</span>
+<span class="tag">Seismology</span>
+<span class="tag">Crustal Deformation</span>
+<span class="tag">Strain Rate</span>
+<span class="tag">Reservoir Triggered Seismicity</span>
+<span class="tag">GRACE</span>
 
-</div>
+</section>
 
-<div class="card">
-
-<h2>Publications</h2>
+<section id="publications">
+<h2>Publications & Conferences</h2>
 
 <p>
-Research papers, conference proceedings and scientific contributions.
+Research papers, conference proceedings,
+presentations and scientific contributions.
 </p>
 
-</div>
+</section>
 
-<div class="card">
-
+<section id="tutorials">
 <h2>Tutorials</h2>
 
 <ul>
@@ -224,25 +197,33 @@ Research papers, conference proceedings and scientific contributions.
 <li>GATE Geophysics Preparation</li>
 </ul>
 
-</div>
+</section>
 
-<div class="card">
-
+<section id="travel">
 <h2>Travel Blog</h2>
 
 <ul>
 <li>Italy</li>
 <li>Kedarnath</li>
-<li>Ujjain</li>
+<li>Ujjain Mahakal</li>
 <li>Somnath</li>
 <li>Nainital</li>
 <li>Mumbai</li>
 </ul>
 
-</div>
+</section>
 
-<div class="card">
+<section id="poetry">
+<h2>Poetry & Social Articles</h2>
 
+<p>
+Poetry, social observations, Indian politics,
+society and current affairs articles.
+</p>
+
+</section>
+
+<section id="adda">
 <h2>Geophysics Adda Academy</h2>
 
 <ul>
@@ -250,17 +231,22 @@ Research papers, conference proceedings and scientific contributions.
 <li>M.Sc Notes</li>
 <li>PYQ</li>
 <li>Solved Papers</li>
-<li>Quiz Section</li>
+<li>Numerical Practice</li>
+<li>Quiz Section (Upcoming)</li>
 </ul>
 
-</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<p>Email: your-email@example.com</p>
+<p>Telegram: @GeophysicsAdda</p>
 
 </section>
 
 <footer>
-
-© 2026 Himanshu Chaube | Geophysics Adda Academy
-
+© 2026 Himanshu Chaube | Geophysics Adda
 </footer>
 
 </body>
