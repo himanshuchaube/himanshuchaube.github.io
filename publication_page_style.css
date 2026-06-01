@@ -1,0 +1,97 @@
+/* ==================================
+PUBLICATIONS PAGE
+================================== */
+
+.pub-layout{
+
+```
+display:flex;
+
+gap:25px;
+
+align-items:flex-start;
+```
+
+}
+
+.pub-main{
+
+```
+flex:3;
+```
+
+}
+
+.pub-sidebar{
+
+```
+flex:1;
+```
+
+}
+
+.publication{
+
+```
+margin-bottom:25px;
+
+padding-bottom:15px;
+
+border-bottom:1px solid #ddd;
+```
+
+}
+
+.publication-title{
+
+```
+font-weight:bold;
+
+color:#003366;
+```
+
+}
+
+.publication-doi{
+
+```
+margin-top:5px;
+```
+
+}
+
+.publication-doi a{
+
+```
+color:#0056b3;
+
+text-decoration:none;
+```
+
+}
+
+.publication-doi a:hover{
+
+```
+text-decoration:underline;
+```
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+```
+.pub-layout{
+
+    flex-direction:column;
+}
+
+.pub-sidebar{
+
+    width:100%;
+}
+```
+
+}
