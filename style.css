@@ -29,21 +29,18 @@ body{
     max-width:1200px;
     margin:auto;
     display:flex;
-    flex-wrap:wrap;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     gap:30px;
 }
 
 .hero-left{
-    flex:1;
-    min-width:300px;
+    flex:0 0 60%;
 }
 
 .hero-right{
-    flex:1;
-    min-width:250px;
-    text-align:center;
+    flex:0 0 35%;
+    text-align:right;
 }
 
 .hero-right img{
@@ -109,6 +106,7 @@ h1{
 
 .btn:hover{
     background:#ffd54f;
+    transform:translateY(-2px);
 }
 
 /* ==================================
@@ -235,8 +233,14 @@ footer{
         flex-direction:column;
     }
 
+    .hero-left,
+    .hero-right{
+        flex:100%;
+        text-align:center;
+    }
+
     .hero-right img{
-        width:200px;
+        width:180px;
     }
 
     h1{
