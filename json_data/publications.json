@@ -1,12 +1,82 @@
 [
     {
-        "title":"Crustal deformation analysis in Koyna region using GNSS observations",
-        "authors":"Chaube, H., Sharma, R., Singh, A.",
-        "year":"2025",
-        "journal":"Journal of Seismology",
-        "volume":"29",
-        "issue":"3",
-        "pages":"123-145",
-        "doi":"https://doi.org/10.1111/2026"
+        "title": "Frequency-dependent attenuation of P-and S-waves in the RTS environment of the Koyna-Warna region, Western India",
+        "year": "2026",
+        "citations": 2,
+        "authors": "CR Mahato, H Chaube",
+        "publication": "Journal of Seismology 30 (1), 8, 2026",
+        "apa": "CR Mahato, H Chaube (2026). Frequency-dependent attenuation of P-and S-waves in the RTS environment of the Koyna-Warna region, Western India. Journal of Seismology 30 (1), 8, 2026."
+    },
+    {
+        "title": "Intraplate strain rate variations associated with reservoir-triggered seismicity: A case study from Koyna, Western India",
+        "year": "2026",
+        "citations": null,
+        "authors": "H Chaube, AK Sutar, U Shankar, S Roy",
+        "publication": "Geodesy and Geodynamics, 2026",
+        "apa": "H Chaube, AK Sutar, U Shankar, S Roy (2026). Intraplate strain rate variations associated with reservoir-triggered seismicity: A case study from Koyna, Western India. Geodesy and Geodynamics, 2026."
+    },
+    {
+        "title": "Revisiting the reservoir-triggered seismicity of Koyna India using near-source seismological observations and relationship with reservoir water level changes",
+        "year": "2025",
+        "citations": 5,
+        "authors": "AK Sutar, S Rohilla, H Chaube, C Chaudhari",
+        "publication": "Tectonophysics 907, 230743, 2025",
+        "apa": "AK Sutar, S Rohilla, H Chaube, C Chaudhari (2025). Revisiting the reservoir-triggered seismicity of Koyna India using near-source seismological observations and relationship with reservoir water level changes. Tectonophysics 907, 230743, 2025."
+    },
+    {
+        "title": "New Insights into Recurrent Reservoir Triggered Seismicity in Koyna Region, India from Scientific Deep Drilling Studies-A Review",
+        "year": "2025",
+        "citations": 3,
+        "authors": "S Roy, D Goswami, VV Akkiraju, AK Sutar, S Rohilla, CS Vishnu, ...",
+        "publication": "Journal of the Geological Society of India 101 (6), 748-753, 2025",
+        "apa": "S Roy, D Goswami, VV Akkiraju, AK Sutar, S Rohilla, CS Vishnu, ... (2025). New Insights into Recurrent Reservoir Triggered Seismicity in Koyna Region, India from Scientific Deep Drilling Studies-A Review. Journal of the Geological Society of India 101 (6), 748-753, 2025."
+    },
+    {
+        "title": "Intraplate strain rate variations associated with reservoir triggered seismicity: a study from Koyna, western India",
+        "year": "2025",
+        "citations": null,
+        "authors": "H Chaube, AK Sutar, S Roy",
+        "publication": "International Association of Geodesy Scientific Assembly, 2025",
+        "apa": "H Chaube, AK Sutar, S Roy (2025). Intraplate strain rate variations associated with reservoir triggered seismicity: a study from Koyna, western India. International Association of Geodesy Scientific Assembly, 2025."
+    },
+    {
+        "title": "Delineation of paleochannel and groundwater resources in the Khari river basin, Kachchh using transient electromagnetics",
+        "year": "2023",
+        "citations": 6,
+        "authors": "R Nikam, GP Kumar, AD Prasad, H Chaube, S Chopra",
+        "publication": "Journal of the Geological Society of India 99 (2), 239-246, 2023",
+        "apa": "R Nikam, GP Kumar, AD Prasad, H Chaube, S Chopra (2023). Delineation of paleochannel and groundwater resources in the Khari river basin, Kachchh using transient electromagnetics. Journal of the Geological Society of India 99 (2), 239-246, 2023."
+    },
+    {
+        "title": "Integrated analysis of the gravity and the magnetic data to infer structural features and their role in prospective mineralisation in and around the Ambaji\u2013Deri\u2013Danta \u2026",
+        "year": "2022",
+        "citations": 7,
+        "authors": "AK Chouhan, S Chopra, H Chaube, D Singh, AK Mishra",
+        "publication": "Journal of Earth System Science 131 (4), 226, 2022",
+        "apa": "AK Chouhan, S Chopra, H Chaube, D Singh, AK Mishra (2022). Integrated analysis of the gravity and the magnetic data to infer structural features and their role in prospective mineralisation in and around the Ambaji\u2013Deri\u2013Danta \u2026. Journal of Earth System Science 131 (4), 226, 2022."
+    },
+    {
+        "title": "Investigation of hydrological characteristics of the Kachchh Mainland Fault (KMF) Zone, Gujarat, Western India using time domain electromagnetic study",
+        "year": "2022",
+        "citations": 2,
+        "authors": "R Nikam, S Chopra, GP Kumar, I Chaudhary, M Nagar, H Chaube, ...",
+        "publication": "Journal of Earth System Science 131 (4), 248, 2022",
+        "apa": "R Nikam, S Chopra, GP Kumar, I Chaudhary, M Nagar, H Chaube, ... (2022). Investigation of hydrological characteristics of the Kachchh Mainland Fault (KMF) Zone, Gujarat, Western India using time domain electromagnetic study. Journal of Earth System Science 131 (4), 248, 2022."
+    },
+    {
+        "title": "Seismicity map and Local seismic wave velocity beneath Kachchh and Saurashtra of Gujarat region using Local earthquakes of 2016",
+        "year": "2018",
+        "citations": null,
+        "authors": "H Chaube, P Mahesh, V Kumar",
+        "publication": "National Conference on Earth System Science with special reference to \u2026, 2018",
+        "apa": "H Chaube, P Mahesh, V Kumar (2018). Seismicity map and Local seismic wave velocity beneath Kachchh and Saurashtra of Gujarat region using Local earthquakes of 2016. National Conference on Earth System Science with special reference to \u2026, 2018."
+    },
+    {
+        "title": "Shallow subsurface image of the Katrol Hill and its subsidiary branch faults, Kachchh using Transient electromagnetic investigations",
+        "year": "2018",
+        "citations": null,
+        "authors": "H Chaube, I Chaudhary, AD Prasad, R Nikam, D Singh, P Gayatri",
+        "publication": "Emerging Trends in Geophysical Research for Make-in-India 2018, 2018",
+        "apa": "H Chaube, I Chaudhary, AD Prasad, R Nikam, D Singh, P Gayatri (2018). Shallow subsurface image of the Katrol Hill and its subsidiary branch faults, Kachchh using Transient electromagnetic investigations. Emerging Trends in Geophysical Research for Make-in-India 2018, 2018."
     }
 ]
