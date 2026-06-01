@@ -17,12 +17,21 @@ jobs:
           python-version: "3.11"
 
       - name: Install Libraries
-        run: pip install scholarly pandas
+        run: |
+          pip install requests
 
-      - name: Run Scholar Script
-        run: python scholar_update.py
-      
       - name: Run Scholar Script
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python scholar_update.py
+
+      - name: Commit Updated JSON
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add json_data/*.json
+
+          git diff --staged --quiet || git commit -m "Update Scholar Data"
+
+          git push
