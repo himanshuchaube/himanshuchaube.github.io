@@ -1,45 +1,14 @@
-name: Update Google Scholar Data
-
-on:
-schedule:
-- cron: '0 2 * * *'
-
-workflow_dispatch:
-
-jobs:
-
-update-scholar:
-
-
-runs-on: ubuntu-latest
-
 steps:
-
   - name: Checkout Repository
     uses: actions/checkout@v4
 
   - name: Setup Python
     uses: actions/setup-python@v5
-
     with:
-      python-version: '3.11'
+      python-version: "3.11"
 
   - name: Install Libraries
-    run: |
-      pip install scholarly pandas
+    run: pip install scholarly pandas
 
   - name: Run Scholar Script
-    run: |
-      python scholar_update.py
-
-  - name: Commit Changes
-    run: |
-      git config --global user.name "github-actions"
-      git config --global user.email "actions@github.com"
-
-      git add json_data/*.json
-
-      git commit -m "Auto update scholar data" || echo "No changes"
-
-      git push
-
+    run: python scholar_update.py
