@@ -1,97 +1,72 @@
 /* ==================================
-PUBLICATIONS PAGE
+   PUBLICATIONS PAGE
 ================================== */
 
 .pub-layout{
 
-```
-display:flex;
+    display:flex;
 
-gap:25px;
+    gap:25px;
 
-align-items:flex-start;
-```
-
+    align-items:flex-start;
 }
 
 .pub-main{
 
-```
-flex:3;
-```
-
+    flex:3;
 }
 
 .pub-sidebar{
 
-```
-flex:1;
-```
-
+    flex:1;
 }
 
 .publication{
 
-```
-margin-bottom:25px;
+    margin-bottom:25px;
 
-padding-bottom:15px;
+    padding-bottom:15px;
 
-border-bottom:1px solid #ddd;
-```
-
+    border-bottom:1px solid #ddd;
 }
 
 .publication-title{
 
-```
-font-weight:bold;
+    font-weight:bold;
 
-color:#003366;
-```
-
+    color:#003366;
 }
 
 .publication-doi{
 
-```
-margin-top:5px;
-```
-
+    margin-top:5px;
 }
 
 .publication-doi a{
 
-```
-color:#0056b3;
+    color:#0056b3;
 
-text-decoration:none;
-```
-
+    text-decoration:none;
 }
 
 .publication-doi a:hover{
 
-```
-text-decoration:underline;
-```
-
+    text-decoration:underline;
 }
 
-/* Mobile */
+/* ==================================
+   MOBILE VIEW
+================================== */
 
 @media(max-width:768px){
 
-```
-.pub-layout{
+    .pub-layout{
 
-    flex-direction:column;
-}
+        flex-direction:column;
+    }
 
-.pub-sidebar{
+    .pub-sidebar{
 
-    width:100%;
-}
-```
-
+        width:100%;
+    }
 }
