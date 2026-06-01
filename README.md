@@ -1,2 +1,2 @@
 # Geophysics Adda
-Website by Himanshu Chaube
+Website by Himanshu Chaube. 
