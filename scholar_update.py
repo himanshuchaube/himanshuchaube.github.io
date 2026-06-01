@@ -5,6 +5,11 @@ import requests
 SCHOLAR_ID = "n0ggSaUAAAAJ"
 API_KEY = os.getenv("SERPAPI_KEY")
 
+if not API_KEY:
+    raise ValueError("SERPAPI_KEY secret not found")
+
+os.makedirs("json_data", exist_ok=True)
+
 url = "https://serpapi.com/search.json"
 
 params = {
@@ -14,6 +19,11 @@ params = {
 }
 
 data = requests.get(url, params=params).json()
+
+if "error" in data:
+    raise Exception(data["error"])
+
+print("SerpAPI connected successfully")
 
 # ------------------
 # Scholar Stats
