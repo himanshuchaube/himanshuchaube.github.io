@@ -19,6 +19,7 @@ params = {
 }
 
 data = requests.get(url, params=params).json()
+print(json.dumps(data, indent=2))
 
 if "error" in data:
     raise Exception(data["error"])
