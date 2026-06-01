@@ -33,15 +33,14 @@ print("SerpAPI connected successfully")
 author = data.get("author", {})
 cited_by = data.get("cited_by", {})
 
+table = cited_by.get("table", [])
+
 stats = {
     "name": author.get("name", ""),
     "affiliations": author.get("affiliations", ""),
-    "citations": cited_by.get("table", [{}])[0].get("all", 0)
-        if cited_by.get("table") else 0,
-    "h_index": cited_by.get("table", [{}, {}])[1].get("all", 0)
-        if len(cited_by.get("table", [])) > 1 else 0,
-    "i10_index": cited_by.get("table", [{}, {}, {}])[2].get("all", 0)
-        if len(cited_by.get("table", [])) > 2 else 0
+    "citations": table[0]["citations"]["all"] if len(table) > 0 else 0,
+    "h_index": table[1]["h_index"]["all"] if len(table) > 1 else 0,
+    "i10_index": table[2]["i10_index"]["all"] if len(table) > 2 else 0
 }
 
 with open("json_data/scholar_stats.json", "w", encoding="utf-8") as f:
