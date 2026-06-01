@@ -1,14 +1,23 @@
-steps:
-  - name: Checkout Repository
-    uses: actions/checkout@v4
+name: Update Google Scholar Data
 
-  - name: Setup Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: "3.11"
+on:
+  workflow_dispatch:
 
-  - name: Install Libraries
-    run: pip install scholarly pandas
+jobs:
+  update-scholar:
+    runs-on: ubuntu-latest
 
-  - name: Run Scholar Script
-    run: python scholar_update.py
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Libraries
+        run: pip install scholarly pandas
+
+      - name: Run Scholar Script
+        run: python scholar_update.py
