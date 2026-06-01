@@ -65,7 +65,8 @@
         <h1>Publications & Conferences</h1>
 
         <p>
-            Journal publications, conference presentations,
+            Peer-reviewed journal publications,
+            conference presentations,
             citation metrics and academic collaborations.
         </p>
 
@@ -78,7 +79,7 @@
     <div class="pub-layout">
 
         <!-- ==================================
-             LEFT SECTION
+             LEFT COLUMN
         =================================== -->
 
         <div class="pub-main">
@@ -91,34 +92,7 @@
 
                 <div id="publications-list">
 
-                    <div class="publication">
-
-                        <div class="publication-title">
-
-                            Sample Publication Title
-
-                        </div>
-
-                        <p>
-
-                            Chaube H., Author A., Author B. (2025).
-
-                            Journal Name.
-
-                        </p>
-
-                        <div class="publication-doi">
-
-                            DOI:
-                            <a href="#">
-
-                                https://doi.org/xxxxx
-
-                            </a>
-
-                        </div>
-
-                    </div>
+                    <p>Loading publications...</p>
 
                 </div>
 
@@ -132,21 +106,7 @@
 
                 <div id="conference-list">
 
-                    <div class="publication">
-
-                        <div class="publication-title">
-
-                            Sample Conference Presentation
-
-                        </div>
-
-                        <p>
-
-                            AGU Fall Meeting, USA (2025)
-
-                        </p>
-
-                    </div>
+                    <p>Loading conferences...</p>
 
                 </div>
 
@@ -160,17 +120,21 @@
 
         <div class="pub-sidebar">
 
-            <!-- Google Scholar Stats -->
+            <!-- Scholar Stats -->
 
             <div class="card">
 
                 <h2>Google Scholar Stats</h2>
 
-                <p>Citations : --</p>
+                <div id="scholar-stats">
 
-                <p>h-index : --</p>
+                    <p>Citations : Loading...</p>
 
-                <p>i10-index : --</p>
+                    <p>h-index : Loading...</p>
+
+                    <p>i10-index : Loading...</p>
+
+                </div>
 
             </div>
 
@@ -180,15 +144,11 @@
 
                 <h2>Collaborators</h2>
 
-                <ul>
+                <div id="coauthors-list">
 
-                    <li>Author 1</li>
+                    <p>Loading collaborators...</p>
 
-                    <li>Author 2</li>
-
-                    <li>Author 3</li>
-
-                </ul>
+                </div>
 
             </div>
 
@@ -203,11 +163,14 @@
 ================================== -->
 
 <footer>
+
     © 2026 Himanshu Chaube | Geophysics Adda
+
 </footer>
 
-<!-- Publications JavaScript -->
+<!-- Publications Loader -->
 <script src="publications.js"></script>
 
 </body>
+
 </html>
