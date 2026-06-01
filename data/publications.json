@@ -1,9 +1,12 @@
 [
     {
         "title":"Crustal deformation analysis in Koyna region using GNSS observations",
-        "authors":"Chaube, H., Author A., Author B.",
+        "authors":"Chaube, H., Sharma, R., Singh, A.",
         "year":"2025",
         "journal":"Journal of Seismology",
+        "volume":"29",
+        "issue":"3",
+        "pages":"123-145",
         "doi":"https://doi.org/10.xxxx/yyyy"
     }
 ]
