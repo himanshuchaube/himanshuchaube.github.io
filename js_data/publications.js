@@ -2,7 +2,7 @@
    LOAD PUBLICATIONS
 ================================== */
 
-fetch('data/publications.json')
+fetch('json_data/publications.json')
 
     .then(response => response.json())
 
@@ -72,7 +72,7 @@ fetch('data/publications.json')
    LOAD CONFERENCES
 ================================== */
 
-fetch('data/conferences.json')
+fetch('json_data/conferences.json')
 
     .then(response => response.json())
 
