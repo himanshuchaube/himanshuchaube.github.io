@@ -332,3 +332,108 @@ footer{
 .fa-envelope{
     color:#d44638;
 }
+/* ==================================
+   DESIGNATION
+================================== */
+
+.designation{
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+    color:#d6e8ff;
+
+    font-weight:500;
+}
+
+/* ==================================
+   MOTTO INSIDE FOUNDER LINE
+================================== */
+
+.motto{
+
+    color:#8ff0ff;
+
+    font-weight:normal;
+
+    font-size:18px;
+}
+
+/* ==================================
+   SOCIAL MEDIA LINKS
+================================== */
+
+.social-icons{
+
+    margin-top:20px;
+}
+
+.social-icons a,
+.social-icons a:visited{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 16px;
+
+    margin-right:10px;
+
+    margin-bottom:10px;
+
+    background:white;
+
+    color:#003366;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+
+    background:#ffd54f;
+
+    color:#003366;
+
+    transform:translateY(-3px);
+}
+
+.social-icons i{
+
+    margin-right:8px;
+}
+
+/* Google Scholar */
+.fa-graduation-cap{
+    color:#d4a017;
+}
+
+/* ResearchGate */
+.fa-researchgate{
+    color:#00ccbb;
+}
+
+/* LinkedIn */
+.fa-linkedin{
+    color:#0077b5;
+}
+
+/* Telegram */
+.fa-telegram{
+    color:#229ED9;
+}
+
+/* Email */
+.fa-envelope{
+    color:#d44638;
+}
