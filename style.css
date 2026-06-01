@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Chaube | Geophysics Adda</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f6f9;color:#222}
+.hero{
+background:linear-gradient(135deg,#001f4d,#0056b3);
+color:white;padding:60px 20px
+}
+.hero-content{
+max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;
+align-items:center;justify-content:space-between;gap:30px
+}
+.hero-left{flex:1;min-width:300px}
+.hero-right{text-align:center;flex:1;min-width:250px}
+.hero-right img{
+width:300px;max-width:100%;border-radius:20px;
+border:4px solid white;box-shadow:0 0 20px rgba(0,0,0,.4)
+}
+.logo{width:90px;border-radius:50%;margin-bottom:15px}
+h1{font-size:52px;margin-bottom:10px}
+.subtitle{font-size:22px;margin-bottom:10px}
+.founder{color:#ffd54f;font-size:20px;font-weight:bold}
+.tagline{margin:18px 0;font-size:22px;font-weight:bold;color:#8ff0ff}
+.btn{
+display:inline-block;margin:8px;padding:12px 22px;
+background:white;color:#003366;text-decoration:none;
+border-radius:8px;font-weight:bold
+}
+nav{
+background:#00264d;padding:15px;text-align:center
+}
+nav a{
+color:white;text-decoration:none;margin:10px;font-weight:bold
+}
+.container{max-width:1100px;margin:auto;padding:25px}
+.card{
+background:white;padding:25px;margin:20px 0;border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1)
+}
+h2{color:#003366;margin-bottom:15px}
+.tags span{
+display:inline-block;background:#e8eef8;padding:8px 14px;
+margin:5px;border-radius:20px
+}
+.stats{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px
+}
+.stat{
+background:#0b3d91;color:white;padding:20px;border-radius:10px;
+text-align:center
+}
+footer{
+background:#003366;color:white;text-align:center;padding:20px;margin-top:30px
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="hero-content">
+<div class="hero-left">
+<img src="logo.PNG" class="logo" alt="Logo">
+<h1>HIMANSHU CHAUBE</h1>
+<div class="subtitle">Geophysicist | Researcher | Educator | Traveller | Blogger</div>
+<div class="founder">Founder – Geophysics Adda</div>
+<div class="tagline">Explore • Enrich • Excel</div>
+
+<a class="btn" href="cv.pdf">Download CV</a>
+<a class="btn" href="#">ResearchGate</a>
+<a class="btn" href="https://t.me/GeophysicsAdda">Telegram</a>
+</div>
+
+<div class="hero-right">
+<img src="profile.jpeg" alt="Himanshu Chaube">
+</div>
+</div>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#tutorials">Tutorials</a>
+<a href="#travel">Travel</a>
+<a href="#academy">Academy</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>Current Position</h2>
+<p><b>Research Fellow</b><br>
+Borehole Geophysics Research Laboratory (BGRL)<br>
+Ministry of Earth Sciences, India</p>
+</div>
+
+<div class="card">
+<h2>Highlights</h2>
+<div class="stats">
+<div class="stat"><h3>7+</h3><p>Years Experience</p></div>
+<div class="stat"><h3>GATE</h3><p>AIR 27</p></div>
+<div class="stat"><h3>IAG</h3><p>Travel Grant</p></div>
+<div class="stat"><h3>GNSS</h3><p>InSAR & Seismology</p></div>
+</div>
+</div>
+
+<div class="card" id="about">
+<h2>About Me</h2>
+<p>I work in GNSS, InSAR, Seismology, Crustal Deformation and Reservoir Triggered Seismicity studies. This website combines research, education, tutorials, travel experiences and community learning through Geophysics Adda.</p>
+</div>
+
+<div class="card" id="research">
+<h2>Research Areas</h2>
+<div class="tags">
+<span>GNSS</span>
+<span>InSAR</span>
+<span>Seismology</span>
+<span>Crustal Deformation</span>
+<span>Strain Rate</span>
+<span>Reservoir Triggered Seismicity</span>
+<span>GRACE</span>
+</div>
+</div>
+
+<div class="card" id="publications">
+<h2>Publications & Conferences</h2>
+<p>Journal papers, conference presentations, research highlights and academic activities.</p>
+</div>
+
+<div class="card" id="tutorials">
+<h2>Tutorials</h2>
+<ul>
+<li>GAMIT/GLOBK</li>
+<li>GNSS Data Processing</li>
+<li>ISCE2</li>
+<li>MintPy</li>
+<li>Seisan</li>
+<li>ObsPy</li>
+</ul>
+</div>
+
+<div class="card" id="travel">
+<h2>Travel & Heritage</h2>
+<p>Jyotirlinga Yatra, Italy, Nainital, Mumbai and geological field experiences.</p>
+</div>
+
+<div class="card" id="academy">
+<h2>Geophysics Adda Academy</h2>
+<ul>
+<li>GATE Geophysics</li>
+<li>M.Sc. Study Material</li>
+<li>PYQs</li>
+<li>Solved Papers</li>
+<li>Numerical Practice</li>
+<li>Quiz Section (Upcoming)</li>
+</ul>
+</div>
+
+<div class="card" id="contact">
+<h2>Contact</h2>
+<p>Email: himanshuchaube8@gmail.com</p>
+<p>Telegram: @GeophysicsAdda</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Himanshu Chaube | Geophysics Adda
+</footer>
+
+</body>
+</html>
