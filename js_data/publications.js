@@ -11,27 +11,34 @@ fetch('json_data/publications.json')
 
         publicationContainer.innerHTML = '';
 
-        publications.forEach(pub => {
+        publications.forEach((pub, index) => {
 
             const publicationHTML = `
 
                 <div class="publication">
 
-                    <div class="publication-title">
-                        ${pub.title}
-                    </div>
-
                     <p>
+
+                        <strong>
+                            ${index + 1}.
+                        </strong>
+
                         ${pub.authors}
-                        (${pub.year})
+                        (${pub.year}).
+
+                        <strong>
+                            ${pub.title}
+                        </strong>.
+
+                        <i>
+                            ${pub.journal || pub.publication || ''}
+                        </i>
+
                     </p>
 
                     <p>
-                        <i>${pub.publication}</i>
-                    </p>
-
-                    <p>
-                        Citations: ${pub.citations ?? 0}
+                        Citations:
+                        ${pub.citations ?? 0}
                     </p>
 
                 </div>
@@ -42,6 +49,7 @@ fetch('json_data/publications.json')
 
             publicationContainer.innerHTML +=
                 publicationHTML;
+
         });
 
     })
@@ -68,20 +76,30 @@ fetch('json_data/conferences.json')
 
         conferenceContainer.innerHTML = '';
 
-        conferences.forEach(conf => {
+        conferences.forEach((conf, index) => {
 
             const conferenceHTML = `
 
                 <div class="publication">
 
-                    <div class="publication-title">
-                        ${conf.title}
-                    </div>
+                    <p>
+
+                        <strong>
+                            ${index + 1}.
+                        </strong>
+
+                        <strong>
+                            ${conf.title}
+                        </strong>
+
+                    </p>
 
                     <p>
+
                         ${conf.conference},
                         ${conf.location}
                         (${conf.year})
+
                     </p>
 
                 </div>
@@ -92,6 +110,7 @@ fetch('json_data/conferences.json')
 
             conferenceContainer.innerHTML +=
                 conferenceHTML;
+
         });
 
     })
@@ -113,18 +132,23 @@ fetch('json_data/scholar_stats.json')
     .then(response => response.json())
     .then(stats => {
 
-        document.getElementById('scholar-stats').innerHTML = `
+        document.getElementById(
+            'scholar-stats'
+        ).innerHTML = `
 
             <p>
-                Citations : ${stats.citations}
+                Citations :
+                ${stats.citations}
             </p>
 
             <p>
-                h-index : ${stats.h_index}
+                h-index :
+                ${stats.h_index}
             </p>
 
             <p>
-                i10-index : ${stats.i10_index}
+                i10-index :
+                ${stats.i10_index}
             </p>
 
         `;
@@ -149,14 +173,20 @@ fetch('json_data/coauthors.json')
     .then(authors => {
 
         const container =
-            document.getElementById('coauthors-list');
+            document.getElementById(
+                'coauthors-list'
+            );
 
         container.innerHTML = '';
 
         authors.forEach(author => {
 
             container.innerHTML += `
-                <p>${author}</p>
+
+                <p>
+                    ${author}
+                </p>
+
             `;
 
         });
