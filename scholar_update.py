@@ -114,7 +114,12 @@ for p in publications:
 
         a = a.strip()
 
-        if a and "Himanshu" not in a:
+        if (
+            a
+            and a != "..."
+            and "H Chaube" not in a
+            and "Himanshu" not in a
+        ):
             coauthors.add(a)
 
 with open(
@@ -130,3 +135,4 @@ with open(
     )
 
 print("All scholar files generated successfully")
+
