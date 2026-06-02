@@ -25,6 +25,9 @@ jobs:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python scholar_update.py
 
+      - name: Run ORCID Script
+        run: python orcid_update.py
+
       - name: Commit Updated JSON
         run: |
           git config --global user.name "github-actions"
