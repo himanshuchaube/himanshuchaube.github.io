@@ -1,7 +1,12 @@
 name: Update Google Scholar Data
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:        # manual run (Actions tab -> Run workflow)
+  schedule:
+    - cron: "0 3 * * 1"     # automatic: every Monday, 03:00 UTC
+
+permissions:
+  contents: write           # needed so the workflow can push the updated JSON
 
 jobs:
   update-scholar:
@@ -28,6 +33,9 @@ jobs:
       - name: Run ORCID Script
         run: python orcid_update.py
 
+      - name: Show changed files (for debugging)
+        run: git status --short
+
       - name: Commit Updated JSON
         run: |
           git config --global user.name "github-actions"
@@ -37,4 +45,5 @@ jobs:
 
           git diff --staged --quiet || git commit -m "Update Scholar Data"
 
+          git pull --rebase
           git push
