@@ -1,0 +1,65 @@
+name: Add Conference
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Year (e.g. 2026)"
+        required: true
+      date:
+        description: "Date (e.g. January 23–25, 2026) - optional"
+        required: false
+      authors:
+        description: "Authors (e.g. Chaube, H., & Sutar, A. K.)"
+        required: true
+      title:
+        description: "Title of your abstract/talk"
+        required: true
+      event:
+        description: "Conference name"
+        required: true
+      venue:
+        description: "Place (e.g. Gandhinagar, India)"
+        required: true
+      type:
+        description: "Presentation type"
+        required: true
+        type: choice
+        default: Poster
+        options:
+          - Oral
+          - Poster
+          - Published
+
+permissions:
+  contents: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Add conference entry
+        env:
+          CONF_YEAR: ${{ inputs.year }}
+          CONF_DATE: ${{ inputs.date }}
+          CONF_AUTHORS: ${{ inputs.authors }}
+          CONF_TITLE: ${{ inputs.title }}
+          CONF_EVENT: ${{ inputs.event }}
+          CONF_VENUE: ${{ inputs.venue }}
+          CONF_TYPE: ${{ inputs.type }}
+        run: python add_conference.py
+
+      - name: Commit
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add json_data/conferences.json
+          git diff --staged --quiet || git commit -m "Add conference: ${{ inputs.title }}"
+          git pull --rebase
+          git push
