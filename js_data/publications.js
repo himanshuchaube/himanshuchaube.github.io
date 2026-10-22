@@ -1,5 +1,7 @@
 /* ==================================
    LOAD PUBLICATIONS
+   Format:
+   Authors (Year). Title. Journal, Vol(Issue), Pages. DOI
 ================================== */
 
 fetch('json_data/publications.json')
@@ -13,37 +15,74 @@ fetch('json_data/publications.json')
 
         publications.forEach((pub, index) => {
 
+            // Make author name bold
+            const authors = (pub.authors || '')
+                .replace(/Himanshu Chaube/g,
+                         '<strong>Himanshu Chaube</strong>');
+
+            // Journal, Vol(Issue), Pages
+            const journalName =
+                pub.journal || pub.publication || '';
+
+            let journalInfo = journalName
+                ? `<i>${journalName}</i>`
+                : '';
+
+            if (pub.volume) {
+                journalInfo += `, ${pub.volume}`;
+                if (pub.issue) {
+                    journalInfo += `(${pub.issue})`;
+                }
+            }
+
+            if (pub.pages) {
+                journalInfo += `, ${pub.pages}`;
+            }
+
+            // DOI link
+            const doiHTML = pub.doi
+                ? `<br>
+                   <span class="pub-doi">
+                       DOI:
+                       <a href="${pub.doi}"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          ${pub.doi}
+                       </a>
+                   </span>`
+                : '';
+
+            // Citations (only if available)
+            const citationHTML =
+                (typeof pub.citations === 'number' && pub.citations > 0)
+                    ? `<br>
+                       <span class="pub-citations">
+                           Citations: ${pub.citations}
+                       </span>`
+                    : '';
+
             const publicationHTML = `
 
                 <div class="publication">
 
                     <p>
 
-                        <strong>
-                            ${index + 1}.
-                        </strong>
+                        <strong>${index + 1}.</strong>
 
-                        ${pub.authors}
+                        ${authors}
                         (${pub.year}).
 
-                        <strong>
-                            ${pub.title}
-                        </strong>.
+                        ${pub.title}.
 
-                        <i>
-                            ${pub.journal || pub.publication || ''}
-                        </i>
+                        ${journalInfo}.
 
-                    </p>
+                        ${doiHTML}
 
-                    <p>
-                        Citations:
-                        ${pub.citations ?? 0}
+                        ${citationHTML}
+
                     </p>
 
                 </div>
-
-                <hr>
 
             `;
 
@@ -121,8 +160,6 @@ fetch('json_data/conferences.json')
                     </p>
 
                 </div>
-
-                <hr>
 
             `;
 
