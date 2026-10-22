@@ -65,6 +65,11 @@ fetch('json_data/publications.json')
 
 /* ==================================
    LOAD CONFERENCES
+   (json_data/conferences.json)
+   Fields: year, date, authors, title,
+           event, venue, type
+   Old fields (conference, location)
+   are still supported as fallback.
 ================================== */
 
 fetch('json_data/conferences.json')
@@ -78,6 +83,18 @@ fetch('json_data/conferences.json')
 
         conferences.forEach((conf, index) => {
 
+            // Make author name bold
+            const authors = (conf.authors || '')
+                .replace(/Chaube, H\./g,
+                         '<strong>Chaube, H.</strong>');
+
+            const event = conf.event || conf.conference || '';
+            const venue = conf.venue || conf.location || '';
+
+            const place = [venue, conf.date]
+                .filter(Boolean)
+                .join(', ');
+
             const conferenceHTML = `
 
                 <div class="publication">
@@ -88,17 +105,18 @@ fetch('json_data/conferences.json')
                             ${index + 1}.
                         </strong>
 
+                        ${authors}
+                        (${conf.year}).
+
                         <strong>
                             ${conf.title}
-                        </strong>
+                        </strong>.
 
-                    </p>
+                        <i>
+                            ${event}
+                        </i>${place ? ', ' + place : ''}.
 
-                    <p>
-
-                        ${conf.conference},
-                        ${conf.location}
-                        (${conf.year})
+                        ${conf.type ? '[' + conf.type + ']' : ''}
 
                     </p>
 
